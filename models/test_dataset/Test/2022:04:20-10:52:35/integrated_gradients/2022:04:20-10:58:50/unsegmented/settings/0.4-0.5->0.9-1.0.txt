@@ -1,0 +1,21 @@
+{
+    "allowed_error_approximation": 0.001,
+    "arguments_to_load_model": "{'n_inputs' : 11}",
+    "dic_with_index_time_string": "2022:04:20-10:58:50",
+    "folder_name_index": "unsegmented",
+    "framework": "tensorflow",
+    "import_statment_to_load_net": "code_of_project.train_models.Churn_modelling_pytorch.churn_modelling_using_ann_with_hyperparameters",
+    "interval_name": "0.4-0.5->0.9-1.0.pkl",
+    "logging_level": "INFO",
+    "model_to_explain_name": "Test",
+    "num_steps_to_calculate_path_integral": 300,
+    "path_to_model": "/home/jbrugger/PycharmProjects/stingrai-widget/models/test_dataset/Test",
+    "print_model_summary": false,
+    "time_string_of_model": "2022:04:20-10:52:35",
+    "transitions_to_calculate": [
+        "signal->signal",
+        "background->signal",
+        "signal->background",
+        "background->background"
+    ]
+}

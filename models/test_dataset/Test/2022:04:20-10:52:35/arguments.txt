@@ -1,0 +1,19 @@
+{
+    "batch": 32,
+    "dense_1_activation": "linear",
+    "dense_1_dropout_rate": 0.0,
+    "dense_1_neurons": 1,
+    "dense_2_activation": "elu",
+    "dense_2_dropout_rate": 0.4,
+    "dense_2_neurons": 128,
+    "dense_3_activation": "elu",
+    "dense_3_dropout_rate": 0.4,
+    "dense_3_neurons": 128,
+    "epochs": 20,
+    "experiment_name": "Test",
+    "label_category": "label",
+    "learning_rate": 0.001,
+    "path_to_dataset": "/home/jbrugger/PycharmProjects/stingrai-widget/datasets/test/test_dataset.pkl",
+    "use_dense_2": false,
+    "use_dense_3": false
+}
