@@ -9,6 +9,7 @@ from code_of_project.calculate_ig.IG_Controller_Classes.IGControllerPytorch impo
 
 from code_of_project.calculate_ig.calculate_ig_args import get_arguments
 from project_settings import ROOT_PATH
+import timeit
 
 
 def run(arguments):
@@ -81,4 +82,19 @@ def explain_paths_in_transition(ig_controller,
 if __name__ == '__main__':
 
     args = get_arguments()
+    start = timeit.default_timer()
     run(arguments=args)
+    stop = timeit.default_timer()
+    runtime = stop-start
+    runtime_dic = {
+        'runtime' : runtime,
+        'start_time': start,
+        'stop_time': stop
+    }
+
+    helper.save_obj_as_txt(obj=runtime_dic, path=ROOT_PATH / args.path_to_model /  args.time_string_of_model /
+              'integrated_gradients' / args.dic_with_index_time_string /'runtime'/ args.folder_name_index /
+              f'{args.interval_name}_measurement_time_{start}')
+
+
+
