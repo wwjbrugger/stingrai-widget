@@ -138,9 +138,9 @@ def get_settings_structur_widget(arguments) -> dict:
 
         'button_approach_to_use': {
             # The dimensions[left, bottom, width, height] of the new axes
-            'initial': 'IG Unsegmented',
+            'initial': 'IG',
             'pos_args': [0.67, 0.10, 0.11, 0.11],
-            'labels': ['StInGRAI', 'IG Unsegmented']
+            'labels': ['$IG_{Seg}$', 'IG']
         },
 
     }

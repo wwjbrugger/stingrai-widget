@@ -238,10 +238,10 @@ class Widget:
             self.entry_ig_long.insert(len(input), '!not_found!')
 
     def update_approach_to_use(self, approach_to_use):
-        if approach_to_use == 'StInGRAI':
+        if approach_to_use == '$IG_{Seg}$':
             self.bar_plot_obj = self.bar_plot_obj_StInGRAI
             self.feature_histogram_obj = self.feature_histogram_obj_StInGRAI
-        elif approach_to_use == 'IG Unsegmented':
+        elif approach_to_use == 'IG':
             self.bar_plot_obj = self.bar_plot_obj_unsegmented
             self.feature_histogram_obj = self.feature_histogram_obj_unsegmented
         else:
