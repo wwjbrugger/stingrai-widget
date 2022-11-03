@@ -2,7 +2,7 @@
 A widget to calculate integrated gradients of neural networks for numerical tabular datasets.
 
 # Overview
-1. Train model, which should be analyzed
+1. Train model, which should be analyzed.
 2. Split the data set on the basis of the prediction of the model. 
    into intervals with **__code_of_project/get_index_in_interval__**. 
 3. Calculate explanations for differences between intervals with **code_of_project/calculate_ig**.
